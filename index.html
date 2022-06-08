@@ -6,19 +6,38 @@
     <title>✨Beau Collins ⭐️</title>
     <style type="text/css">
       body {
+        background: white;
         margin: 0;
         display: flex;
         justify-content: center;
         align-items: center;
       }
+
       img {
         display: block;
         max-width: 100vw;
         max-height: 100vh;
       }
+
+      img[src="./beaucollins_dark.png"] {
+        display: none;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: black;
+        }
+        img[src="./beaucollins.png"] {
+          display: none;
+        }
+        img[src="./beaucollins_dark.png"] {
+          display: block;
+        }
+      }
     </style>
   </head>
   <body>
     <img src="./beaucollins.png" alt="Welcome to Beau Collins’ Website" />
+    <img src="./beaucollins_dark.png" alt="Welcome to Beau Collins’ Website" />
   </body>
 </html>
