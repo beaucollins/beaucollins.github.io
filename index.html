@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>✨Beau Collins ⭐️</title>
     <style type="text/css">
+      @media (prefers-color-scheme: dark) {
+        html {
+          --base-color: #151f2e;
+        }
+      }
+
       body {
-        background: #f3e8ba;
+        background: var(--base-color, #151f2e);
         margin: 0;
         display: flex;
         justify-content: center;
@@ -18,12 +24,6 @@
         display: block;
         max-width: 90vw;
         max-height: 90vh;
-      }
-
-      @media (prefers-color-scheme: dark) {
-        body {
-          background: #151f2e;
-        }
       }
     </style>
   </head>
